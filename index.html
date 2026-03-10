@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My frist website</title>
+<style>
+body{
+    background-color: black;
+    color: yellow;
+    text-align: center;
+    font-family: Arial;
+}
+button{
+    background-color: yellow;
+    color: black;
+    padding: 10px;
+    font-size: 18px;
+    border:none;
+    border-radius: 5px;
+    display: block;
+    margin: 20px auto;
+}   
+#batlogo{
+    opacity: 0;
+    transition: opacity 3s;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Hello I'm Batman &#129415;</h1>
+<p>This is my first website.</p>
+<img id="batlogo" src="nNZEPc.webp" width="450">
+<audio id="batmansound" src="iam-batman.mp3"></audio>
+
+<button onclick="document.getElementById('batmansound').play()">Click me</button>
+<script>
+    window.onload=function(){
+        document.getElementById("batlogo").style.opacity="1";
+        document.getElementById("batmansound").play();
+    }
+    </script>
+</body>
+</html>
